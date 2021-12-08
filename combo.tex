@@ -2,7 +2,7 @@
 \usepackage{graphicx,color,soul,tabularx}
 \renewcommand{\baselinestretch}{1.5}
 
-\graphicspath{ { ./font/ } }
+\graphicspath{ {./font/} }
 
 \newcommand{\dragonpunch}{\includegraphics[height=1.3em]{dp}}
 \newcommand{\bdragonpunch}{\includegraphics[height=1.3em]{dpb}}
@@ -41,20 +41,21 @@
 \newcommand{\allkick}{\includegraphics[height=1.3em]{allkick}}
 \newcommand{\exkick}{\includegraphics[height=1.3em]{exkick}}
 
-\newcommand{\punch}{\includegraphics[height=1.3em]{arc-punch}}
-\newcommand{\kick}{\includegraphics[height=1.3em]{arc-kick}}
-\newcommand{\slash}{\includegraphics[height=1.3em]{slash}}
-\newcommand{\hslash}{\includegraphics[height=1.3em]{hslash}}
+\newcommand{\btnp}{\includegraphics[height=1.3em]{arc-punch}}
+\newcommand{\btnk}{\includegraphics[height=1.3em]{arc-kick}}
+\newcommand{\btns}{\includegraphics[height=1.3em]{slash}}
+\newcommand{\btnhs}{\includegraphics[height=1.3em]{hslash}}
 \newcommand{\dust}{\includegraphics[height=1.3em]{dust}}
+\newcommand{\btnd}{\dust}
 \newcommand{\bluerc}{\includegraphics[height=1.3em]{bluerc}}
 \newcommand{\purplerc}{\includegraphics[height=1.3em]{purplerc}}
 \newcommand{\yellowrc}{\includegraphics[height=1.3em]{yellowrc}}
 \newcommand{\redrc}{\includegraphics[height=1.3em]{redrc}}
 
-\newcommand{\light}{\includegraphics[height=1.3em]{light}}
-\newcommand{\medium}{\includegraphics[height=1.3em]{medium}}
-\newcommand{\heavy}{\includegraphics[height=1.3em]{heavy}}
-\newcommand{\special}{\includegraphics[height=1.3em]{special}}
+\newcommand{\btnl}{\includegraphics[height=1.3em]{light}}
+\newcommand{\btnm}{\includegraphics[height=1.3em]{medium}}
+\newcommand{\btnh}{\includegraphics[height=1.3em]{heavy}}
+\newcommand{\btnsp}{\includegraphics[height=1.3em]{special}}
 
 \newcommand{\vsone}{\includegraphics[height=1.3em]{vskill1}}
 \newcommand{\vstwo}{\includegraphics[height=1.3em]{vskill2}}
@@ -71,7 +72,14 @@
 \sffamily
 
 \noindent
-lights \\
+ramlethal \\
+\down\btnk, \down\btnd, \dragonpunch\btnp \\
+\down\btnk, \down\btnd, \qcb\btnp\qcb\btnp\qcb\btnp \\
+c.\btns, \down\btnh, \dragonpunch\btnp, \btnk, \forward\btnhs, \qcb\btnk
+
+\smallbreak
+\noindent
+akira lights \\
 cr.\lkick, cr.\lpunch\cancel\qcb\lpunch \\
 cr.\lkick, cr.\lpunch\cancel\dragonpunch\hkick \\
 cr.\lkick, cr.\lpunch\cancel\qcb\expunch \\
