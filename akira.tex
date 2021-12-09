@@ -1,0 +1,103 @@
+%
+% Fighting Game Notation for LaTeX
+%
+% MIT License
+%
+% Copyright (c) 2021 Ian Malerich
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+%
+
+\documentclass[a4paper,8pt,onecolumn]{letter}
+\usepackage{combo,color,soul,tabularx,geometry,extsizes,tcolorbox,multicol,enumitem}
+\renewcommand{\baselinestretch}{1.5}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+
+\setlist[itemize]{leftmargin=0.0mm}
+\sffamily
+
+\begin{document}
+\begin{multicols}{2}
+\begin{tcolorbox}[width=1.00\linewidth,title=lights]
+\begin{itemize}
+\item cr.\lkick, cr.\lpunch\cancel \qcb\lpunch
+\item cr.\lkick, cr.\lpunch\cancel \dragonpunch\hkick
+\item cr.\lkick, cr.\lpunch\cancel \qcb\expunch
+\item cr.\lpunch, \lpunch\~\mpunch\cancel \dragonpunch\hkick
+\item cr.\lpunch, \lpunch\~\mpunch\cancel \qcb\mkick, \lkick
+\item cr.\lpunch, \lpunch\~\mpunch\cancel \qcb\exkick, \dragonpunch\hkick
+\item cr.\lpunch, \lpunch\~\mpunch\cancel \qcb\hpunch
+\item cr.\lpunch, \lpunch\~\mpunch\~\vstwo
+\item (st) cr.\lpunch, \lpunch\~ \mpunch\cancel \qcb\hkick, \hkick, \qcb\expunch\ (corner)\dragonpunch\exkick
+\item cr.\lpunch, \lpunch\~\mpunch\~\vstwo\cancel\up, j.\lpunch, j.\mpunch, j.\hpunch, (jf.\hpunch\ or jf.\hpunch\cancel \qcf\expunch)
+\item \vsone, cr.\lpunch, \lpunch\~\mkick\cancel\qcb\hkick, \hkick, \qcf\expunch, \qcf\hpunch
+\item \vsone, cr.\lpunch, \lpunch\~\mpunch\cancel \qcf\expunch, \dragonpunch\hkick
+\item (cr) cr.\lpunch, \lpunch\~\mpunch\cancel \qcb\mpunch, cr.\lpunch\cancel \dragonpunch\hkick
+\end{itemize}
+\end{tcolorbox}
+
+\columnbreak
+
+\begin{tcolorbox}[width=1.00\linewidth,title=mediums]
+\begin{itemize}
+\item cr.\mpunch\ may be used instead of cr.\lpunch, \lpunch
+\item cr.\mkick\cancel \qcb\lkick, \lkick or \mkick
+\item cr.\mkick\cancel \qcb\exkick, \dragonpunch\hkick
+\item cr.\mkick\cancel \dragonpunch\hkick
+\item (cr.) cr.\mkick\cancel \qcb\mpunch, cr.\lpunch\cancel \dragonpunch\hkick
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[width=1.00\linewidth,title=heavies]
+\begin{itemize}
+\item \hpunch, f.\hpunch, f.\hpunch\cancel \vsone
+\item \hpunch\~\ f.\hpunch\cancel\vstwo,\up, j.\mpunch, j.\hpunch, j.\hkick\cancel \qcf\expunch
+\item f.\hpunch\ \crush, cr.\mpunch\cancel \qcb\mpunch, cr.\lpunch\cancel\dragonpunch\hkick
+\item f.\hpunch\ \crush\cancel \vstwo, \up, j.\mpunch, j.\hpunch, j.\hkick\cancel \qcf\anypunch
+\item \vsone \air \qcf\anypunch\ leads to a \crush\ state
+\end{itemize}
+\end{tcolorbox}
+\end{multicols}
+
+\smallbreak
+\begin{tcolorbox}[width=1.00\linewidth,title=v-trigger 1]
+\begin{itemize}
+\item \hpunch\~\ f.\hpunch\cancel \vtone, cr.\hpunch\back\back, j.\hkick, \qcb\hkick, \hkick, \qcb\expunch, \dragonpunch\exkick
+\item \hpunch\cancel \vtone, cr.\hpunch\cancel \vstwo, \qcf\lpunch, j.\hpunch\cancel \qcf\lpunch, j.\hpunch\cancel \qcf\lpunch, j.\hpunch\cancel \qcf\expunch
+\end{itemize}
+\end{tcolorbox}
+
+\smallbreak
+\begin{tcolorbox}[width=1.00\linewidth,title=v-trigger 2]
+\begin{itemize}
+\item \hkick\cancel\vttwo\cancel \anykick, \anypunch, \anykick, \qcb\expunch
+\item f.\hpunch\cancel \vttwo, \hpunch\~\ f.\hpunch\cancel \vttwo \anykick, \anypunch, \anykick, \vsone \qcf\expunch, \dragonpunch\exkick
+\item \vsone, j.\hkick, cr.\mpunch, \mpunch\cancel \qcb\hkick, \hkick, \qcf\expunch, \vttwo B+K
+\item \vsone, f.\hpunch\cancel \vttwo, \down, \hpunch\~\ f.\hpunch\cancel \vttwo, \down, \mpunch\cancel \qcf\mpunch, \mpunch\cancel \vttwo, \anypunch, \anypunch, \anypunch\cancel \qcf\qcf\anypunch
+\end{itemize}
+\end{tcolorbox}
+
+\end{document}
