@@ -1,75 +1,56 @@
-\documentclass[a4paper]{article}
-\usepackage{graphicx,color,soul,tabularx}
+%
+% Fighting Game Notation for LaTeX
+%
+% MIT License
+%
+% Copyright (c) 2021 Ian Malerich
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+%
+
+\documentclass[a4paper,9pt,twocolumn]{letter}
+\usepackage{combo,color,soul,tabularx,geometry,extsizes}
 \renewcommand{\baselinestretch}{1.5}
 
-\graphicspath{ {./font/} }
-
-\newcommand{\dragonpunch}{\includegraphics[height=1.3em]{dp}}
-\newcommand{\bdragonpunch}{\includegraphics[height=1.3em]{dpb}}
-\newcommand{\qcf}{\includegraphics[height=1.3em]{qcf}}
-\newcommand{\qcb}{\includegraphics[height=1.3em]{qcb}}
-
-\newcommand{\up}{\includegraphics[height=1.3em]{up}}
-\newcommand{\down}{\includegraphics[height=1.3em]{down}}
-\newcommand{\back}{\includegraphics[height=1.3em]{back}}
-\newcommand{\forward}{\includegraphics[height=1.3em]{forward}}
-\newcommand{\downf}{\includegraphics[height=1.3em]{downf}}
-\newcommand{\downb}{\includegraphics[height=1.3em]{downb}}
-\newcommand{\upf}{\includegraphics[height=1.3em]{upf}}
-\newcommand{\upb}{\includegraphics[height=1.3em]{upb}}
-
-\newcommand{\holdup}{\includegraphics[height=1.3em]{holdup}}
-\newcommand{\holddown}{\includegraphics[height=1.3em]{holddown}}
-\newcommand{\holdback}{\includegraphics[height=1.3em]{holdback}}
-\newcommand{\holdforward}{\includegraphics[height=1.3em]{forward}}
-\newcommand{\holddownf}{\includegraphics[height=1.3em]{holddownf}}
-\newcommand{\holddownb}{\includegraphics[height=1.3em]{holddownb}}
-\newcommand{\holdupf}{\includegraphics[height=1.3em]{holdupf}}
-\newcommand{\holdupb}{\includegraphics[height=1.3em]{holdupb}}
-
-\newcommand{\anypunch}{\includegraphics[height=1.3em]{punch}}
-\newcommand{\lpunch}{\includegraphics[height=1.3em]{lpunch}}
-\newcommand{\mpunch}{\includegraphics[height=1.3em]{mpunch}}
-\newcommand{\hpunch}{\includegraphics[height=1.3em]{hpunch}}
-\newcommand{\allpunch}{\includegraphics[height=1.3em]{allpunch}}
-\newcommand{\expunch}{\includegraphics[height=1.3em]{expunch}}
-
-\newcommand{\anykick}{\includegraphics[height=1.3em]{kick}}
-\newcommand{\lkick}{\includegraphics[height=1.3em]{lkick}}
-\newcommand{\mkick}{\includegraphics[height=1.3em]{mkick}}
-\newcommand{\hkick}{\includegraphics[height=1.3em]{hkick}}
-\newcommand{\allkick}{\includegraphics[height=1.3em]{allkick}}
-\newcommand{\exkick}{\includegraphics[height=1.3em]{exkick}}
-
-\newcommand{\btnp}{\includegraphics[height=1.3em]{arc-punch}}
-\newcommand{\btnk}{\includegraphics[height=1.3em]{arc-kick}}
-\newcommand{\btns}{\includegraphics[height=1.3em]{slash}}
-\newcommand{\btnhs}{\includegraphics[height=1.3em]{hslash}}
-\newcommand{\dust}{\includegraphics[height=1.3em]{dust}}
-\newcommand{\btnd}{\dust}
-\newcommand{\bluerc}{\includegraphics[height=1.3em]{bluerc}}
-\newcommand{\purplerc}{\includegraphics[height=1.3em]{purplerc}}
-\newcommand{\yellowrc}{\includegraphics[height=1.3em]{yellowrc}}
-\newcommand{\redrc}{\includegraphics[height=1.3em]{redrc}}
-
-\newcommand{\btnl}{\includegraphics[height=1.3em]{light}}
-\newcommand{\btnm}{\includegraphics[height=1.3em]{medium}}
-\newcommand{\btnh}{\includegraphics[height=1.3em]{heavy}}
-\newcommand{\btnsp}{\includegraphics[height=1.3em]{special}}
-
-\newcommand{\vsone}{\includegraphics[height=1.3em]{vskill1}}
-\newcommand{\vstwo}{\includegraphics[height=1.3em]{vskill2}}
-
-\newcommand{\vtone}{\includegraphics[height=1.3em]{vtrigger1}}
-\newcommand{\vttwo}{\includegraphics[height=1.3em]{vtrigger2}}
-
-\newcommand{\cancel}{\ \includegraphics[height=1.3em]{cancel}\ }
-\newcommand{\crush}{\includegraphics[height=1.3em]{crush}}
-\newcommand{\air}{\ \includegraphics[height=1.3em]{air}}
-\newcommand{\tap}{\ \includegraphics[height=1.3em]{tap}}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
 
 \begin{document}
 \sffamily
+
+\noindent
+\anypunch\lpunch\mpunch\hpunch\allpunch\expunch \\
+\anykick\lkick\mkick\hkick\allkick\exkick \\
+\vsone\vstwo\vtone\vttwo \\
+\cancel\crush\air\mash \\
+\btnp\btnk\btns\btnhs\btnd\bluerc\purplerc\yellowrc\redrc \\
+\btnl\btnm\btnh\btnsp \\
+
+\noindent
+chun li \\
+cr.\hpunch, \holddown\up\exkick \\
+\back\hpunch, \hcdf\anypunch \\
 
 \noindent
 ramlethal \\
@@ -83,15 +64,15 @@ akira lights \\
 cr.\lkick, cr.\lpunch\cancel\qcb\lpunch \\
 cr.\lkick, cr.\lpunch\cancel\dragonpunch\hkick \\
 cr.\lkick, cr.\lpunch\cancel\qcb\expunch \\
-cr.\lpunch, \lpunch\mpunch\cancel\dragonpunch\hkick \\
-cr.\lpunch, \lpunch\mpunch\cancel\qcb\mkick,\lkick \\\
-cr.\lpunch, \lpunch\mpunch\cancel\qcb\hpunch \\
-cr.\lpunch, \lpunch\mpunch\cancel\vstwo \\
-(st) cr.\lpunch, \lpunch\mpunch\cancel\qcb\hkick, \hkick, \qcb\expunch\ [corner], \dragonpunch\exkick \\
-cr.\lpunch, \lpunch\mpunch\cancel\vstwo\cancel\up, j.\lpunch, j.\mpunch, j.\hpunch [jf.\hkick or jf.\hkick\cancel\qcf\expunch] \\
+cr.\lpunch, \lpunch\~\mpunch\cancel\dragonpunch\hkick \\
+cr.\lpunch, \lpunch\~\mpunch\cancel\qcb\mkick,\lkick \\\
+cr.\lpunch, \lpunch\~\mpunch\cancel\qcb\hpunch \\
+cr.\lpunch, \lpunch\~\mpunch\cancel\vstwo \\
+(st) cr.\lpunch, \lpunch\~\mpunch\cancel\qcb\hkick, \hkick, \qcb\expunch\ [corner], \dragonpunch\exkick \\
+cr.\lpunch, \lpunch\~\mpunch\cancel\vstwo\cancel\up, j.\lpunch, j.\mpunch, j.\hpunch [jf.\hkick or jf.\hkick\cancel\qcf\expunch] \\
 \vsone,cr.\lpunch, \lpunch\mkick\cancel\qcb\hkick, \hkick, \qcf\expunch, \qcf\hpunch \\
-\vsone,cr.\lpunch, \lpunch\mpunch\cancel\qcf\expunch, \dragonpunch\hkick \\
-(cr) cr.\lpunch, \lpunch\mpunch\cancel\qcb\mpunch, cr.\lpunch\cancel\dragonpunch\hkick \\
+\vsone,cr.\lpunch, \lpunch\~\mpunch\cancel\qcf\expunch, \dragonpunch\hkick \\
+(cr) cr.\lpunch, \lpunch\~\mpunch\cancel\qcb\mpunch, cr.\lpunch\cancel\dragonpunch\hkick \\
 
 \smallbreak
 \noindent
@@ -101,7 +82,7 @@ cr.\mkick\cancel\qcb\exkick,\dragonpunch\hkick \\
 cr.\mkick\cancel\dragonpunch\hkick \\
 (cr) cr.\mkick\cancel\qcb\mpunch, cr.\lpunch\cancel\dragonpunch\hkick \\
 
-\smallbreak
+\vfill\eject
 \noindent
 heavies \\
 \hpunch, f.\hpunch, f.\hpunch\cancel\vsone \\

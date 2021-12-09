@@ -1,0 +1,115 @@
+%
+% Fighting Game Notation for LaTeX
+%
+% MIT License
+%
+% Copyright (c) 2021 Ian Malerich
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+%
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{combo}
+  [2011/01/11 v0.01 LaTeX package for my own purpose]
+
+\RequirePackage{graphicx}
+
+\graphicspath{ {./font/} }
+
+\newcommand{\dragonpunch}{\includegraphics[height=1.2em]{dp}}
+\newcommand{\dragonpunchb}{\includegraphics[height=1.2em]{dpb}}
+\newcommand{\qcf}{\includegraphics[height=1.2em]{qcf}}
+\newcommand{\qcb}{\includegraphics[height=1.2em]{qcb}}
+
+\newcommand{\hcbd}{\includegraphics[height=1.2em]{hcbd}}
+\newcommand{\hcbu}{\includegraphics[height=1.2em]{hcbu}}
+\newcommand{\hcdb}{\includegraphics[height=1.2em]{hcdb}}
+\newcommand{\hcdf}{\includegraphics[height=1.2em]{hcdf}}
+\newcommand{\hcdub}{\includegraphics[height=1.2em]{hcdub}}
+\newcommand{\hcduf}{\includegraphics[height=1.2em]{hcduf}}
+\newcommand{\hcfd}{\includegraphics[height=1.2em]{hcfd}}
+\newcommand{\hcfu}{\includegraphics[height=1.2em]{hcfu}}
+\newcommand{\hcub}{\includegraphics[height=1.2em]{hcub}}
+\newcommand{\hcuf}{\includegraphics[height=1.2em]{hcuf}}
+
+\newcommand{\fcdb}{\includegraphics[height=1.2em]{fcdb}}
+\newcommand{\fcdf}{\includegraphics[height=1.2em]{fcub}}
+\newcommand{\fcub}{\includegraphics[height=1.2em]{fcub}}
+\newcommand{\fcuf}{\includegraphics[height=1.2em]{fcuf}}
+
+\newcommand{\up}{\includegraphics[height=1.2em]{up}}
+\newcommand{\down}{\includegraphics[height=1.2em]{down}}
+\newcommand{\back}{\includegraphics[height=1.2em]{back}}
+\newcommand{\forward}{\includegraphics[height=1.2em]{forward}}
+\newcommand{\downf}{\includegraphics[height=1.2em]{downf}}
+\newcommand{\downb}{\includegraphics[height=1.2em]{downb}}
+\newcommand{\upf}{\includegraphics[height=1.2em]{upf}}
+\newcommand{\upb}{\includegraphics[height=1.2em]{upb}}
+
+\newcommand{\holdup}{\includegraphics[height=1.2em]{holdup}}
+\newcommand{\holddown}{\includegraphics[height=1.2em]{holddown}}
+\newcommand{\holdback}{\includegraphics[height=1.2em]{holdback}}
+\newcommand{\holdforward}{\includegraphics[height=1.2em]{forward}}
+\newcommand{\holddownf}{\includegraphics[height=1.2em]{holddownf}}
+\newcommand{\holddownb}{\includegraphics[height=1.2em]{holddownb}}
+\newcommand{\holdupf}{\includegraphics[height=1.2em]{holdupf}}
+\newcommand{\holdupb}{\includegraphics[height=1.2em]{holdupb}}
+
+\newcommand{\anypunch}{\includegraphics[height=1.2em]{punch}}
+\newcommand{\lpunch}{\includegraphics[height=1.2em]{lpunch}}
+\newcommand{\mpunch}{\includegraphics[height=1.2em]{mpunch}}
+\newcommand{\hpunch}{\includegraphics[height=1.2em]{hpunch}}
+\newcommand{\allpunch}{\includegraphics[height=1.2em]{allpunch}}
+\newcommand{\expunch}{\includegraphics[height=1.2em]{expunch}}
+
+\newcommand{\anykick}{\includegraphics[height=1.2em]{kick}}
+\newcommand{\lkick}{\includegraphics[height=1.2em]{lkick}}
+\newcommand{\mkick}{\includegraphics[height=1.2em]{mkick}}
+\newcommand{\hkick}{\includegraphics[height=1.2em]{hkick}}
+\newcommand{\allkick}{\includegraphics[height=1.2em]{allkick}}
+\newcommand{\exkick}{\includegraphics[height=1.2em]{exkick}}
+
+\newcommand{\btnp}{\includegraphics[height=1.2em]{arc-punch}}
+\newcommand{\btnk}{\includegraphics[height=1.2em]{arc-kick}}
+\newcommand{\btns}{\includegraphics[height=1.2em]{slash}}
+\newcommand{\btnhs}{\includegraphics[height=1.2em]{hslash}}
+\newcommand{\dust}{\includegraphics[height=1.2em]{dust}}
+\newcommand{\btnd}{\dust}
+\newcommand{\bluerc}{\includegraphics[height=1.2em]{bluerc}}
+\newcommand{\purplerc}{\includegraphics[height=1.2em]{purplerc}}
+\newcommand{\yellowrc}{\includegraphics[height=1.2em]{yellowrc}}
+\newcommand{\redrc}{\includegraphics[height=1.2em]{redrc}}
+
+\newcommand{\btnl}{\includegraphics[height=1.2em]{light}}
+\newcommand{\btnm}{\includegraphics[height=1.2em]{medium}}
+\newcommand{\btnh}{\includegraphics[height=1.2em]{heavy}}
+\newcommand{\btnsp}{\includegraphics[height=1.2em]{special}}
+
+\newcommand{\vsone}{\includegraphics[height=1.2em]{vskill1}}
+\newcommand{\vstwo}{\includegraphics[height=1.2em]{vskill2}}
+
+\newcommand{\vtone}{\includegraphics[height=1.2em]{vtrigger1}}
+\newcommand{\vttwo}{\includegraphics[height=1.2em]{vtrigger2}}
+
+\newcommand{\cancel}{\ \includegraphics[height=1.2em]{cancel}\ }
+\newcommand{\crush}{\includegraphics[height=1.2em]{crush}}
+\newcommand{\air}{\ \includegraphics[height=1.2em]{air}}
+\newcommand{\mash}{\ \includegraphics[height=1.2em]{tap}}
+
+\endinput
